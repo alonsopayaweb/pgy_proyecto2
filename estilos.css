@@ -13,11 +13,12 @@ html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantal
 .bodyPrincipal {
     display: flex; /* Le doy mayor flexibilidad a los elementos del body */
     height: 100%;
+    background-color: #4E4E4E; /* El body tiene color de fondo gris */
 }
 
 .menuPrincipal {
     width: 20%; /* Ancho de 20% de pantalla */
-    background-color: #4E4E4E;
+    background-color: rgba(255, 255, 255, 0); /* Color transparente para que se vea el gris de .bodyPrincipal */
 }
  
 
@@ -27,11 +28,11 @@ html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantal
 
 .barraLateral {
     width: 5%; /* Ancho del 5% de la pantalla */
-    background-color: #4E4E4E;
+    background-color: rgba(255, 255, 255, 0); /* Color transparente para que se vea el gris de .bodyPrincipal */
 }
 
 /* Aquí cada elemento dentro del .seccionPrincipal tendrá una separación de altura del 25% */
-.inicio, .nosotros, .gatos, .perros {
+.inicio, .nosotros, .gatos, .perros, .contacto {
     height: 25%;
     
 }
@@ -50,4 +51,9 @@ html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantal
 
 .perros {
     background-color: #FA1F1F;
+}
+
+
+.contacto {
+    background-color: #A116BF;
 }
