@@ -1,2 +1,2 @@
-# pgy_proyecto2
-Proyecto 2 de Programación Web
+# pgy_proyecto1
+Proyecto para la asignatura de PGY
