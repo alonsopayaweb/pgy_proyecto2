@@ -1,0 +1,53 @@
+/* Este asterisco aplica los cambios a todos los elementos */
+* {
+    font-family: sans-serif;
+    color: #FFFFFF;
+    margin: 0; /* Eliminados margenes y rellenos por defecto para despues modificarlos a nuestro antojo */
+    padding: 0;
+}
+
+html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantalla */
+    height: 100%; 
+}
+
+.bodyPrincipal {
+    display: flex; /* Le doy mayor flexibilidad a los elementos del body */
+    height: 100%;
+}
+
+.menuPrincipal {
+    width: 20%; /* Ancho de 20% de pantalla */
+    background-color: #4E4E4E;
+}
+ 
+
+.seccionPrincipal {
+    width: 75%; /* Ancho de 75% de la pantalla */
+}
+
+.barraLateral {
+    width: 5%; /* Ancho del 5% de la pantalla */
+    background-color: #4E4E4E;
+}
+
+/* Aquí cada elemento dentro del .seccionPrincipal tendrá una separación de altura del 25% */
+.inicio, .nosotros, .gatos, .perros {
+    height: 25%;
+    
+}
+
+.inicio {
+    background-color: #28EDE9;
+}
+
+.nosotros {
+    background-color: #EDED28;
+}
+
+.gatos {
+    background-color: #FA901F;
+}
+
+.perros {
+    background-color: #FA1F1F;
+}
