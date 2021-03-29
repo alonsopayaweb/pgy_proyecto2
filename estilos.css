@@ -19,10 +19,17 @@ html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantal
 .menuPrincipal {
     width: 20%; /* Ancho de 20% de pantalla */
     background-color: rgba(255, 255, 255, 0); /* Color transparente para que se vea el gris de .bodyPrincipal */
+    
+}
+
+.contenidoMenu {
+    position: fixed; /* El contenido del menu queda fijo durante scroll */
+    list-style: none;
+    padding: 30px;
 }
  
 
-.seccionPrincipal {
+.seccionPrincipal, .seccionGato, .seccionPerro {
     width: 75%; /* Ancho de 75% de la pantalla */
 }
 
@@ -31,29 +38,73 @@ html { /* El tag madre <html> de raíz, y le daremos altura de 100% de la pantal
     background-color: rgba(255, 255, 255, 0); /* Color transparente para que se vea el gris de .bodyPrincipal */
 }
 
-/* Aquí cada elemento dentro del .seccionPrincipal tendrá una separación de altura del 25% */
-.inicio, .nosotros, .gatos, .perros, .contacto {
+/* Todos los items de lista sin formato */
+li {
+    list-style: none;
+}
+
+/* Aquí cada elemento dentro del .seccionPrincipal del menú principal tendrá una separación de altura del 25% */
+.inicio, .nosotros, .gatos, .perros, .contactos {
     height: 25%;
-    
 }
 
-.inicio {
-    background-color: #28EDE9;
+/*-------------------------------------------------------------------------*/
+/* En esta zona van los colores de cada articulo de cada sección */
+.inicio, .encabezadoGato, .encabezadoPerro {
+    background-color: #00d8f2;
 }
 
-.nosotros {
-    background-color: #EDED28;
+.nosotros, .articuloGato1, .articuloPerro1 {
+    background-color: #ffde00;
 }
 
-.gatos {
-    background-color: #FA901F;
+.gatos, .articuloGato2, .articuloPerro2 {
+    background-color: #ff7a00;
 }
 
-.perros {
-    background-color: #FA1F1F;
+.perros, .articuloGato3, .articuloPerro3 {
+    background-color: #fe0011;
 }
 
-
-.contacto {
+.contactos {
     background-color: #A116BF;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/* Agregamos relleno vertical e horizontal a cada contenido de las secciones */
+.contenidoSeccion, .contenidoSeccionGato, .contenidoSeccionPerro {
+    padding: 30px 150px;
+}
+
+/* Colocamos este display a la foto de cada animal */
+.imagenMascota {
+    display: flex;
+}
+
+/* Modificamos la descripción de cada mascota */
+.listaDescripcion {
+    list-style: none;
+    margin-left: 40px;
+}
+
+/* Relleno para abajo de cada título */
+h1, h2 {
+    padding-bottom: 5px;
+}
+
+/* Links sin decoración y en negrita */
+a {
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* Pseudoclase que da color al link al pasar el mouse */
+a:hover {
+    color: #B6B6B6;
+}
+
+/* Doy invisibilidad a un hr */
+hr {
+    visibility: hidden;
 }
